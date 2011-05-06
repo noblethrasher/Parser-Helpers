@@ -9,7 +9,7 @@ namespace Prelude
     {
         public T Value { get; private set; }
         public bool SuccessfulParse { get; private set; }
-
+        
         public ParseAttemptResult(T Value, bool SuccessfulParse) : this()
         {
             this.Value = Value;
