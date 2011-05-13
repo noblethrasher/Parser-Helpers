@@ -17,7 +17,7 @@ namespace Prelude
         }
 
         //We override the true and false operators because we want to use this in branching statements; e.g. if, while, and the ternary operator.
-        //Normally we just implicitly cast to bool but that doesn't work since T might be a bool resulting in an ambiguity error.
+        //Normally we would just implicitly cast to bool but that doesn't work since T might be a bool resulting in an ambiguity error.
 
         public static bool operator true(ParseAttemptResult<T> obj)
         {
